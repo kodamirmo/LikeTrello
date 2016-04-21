@@ -1,0 +1,52 @@
+<template name="board">
+
+	<div class="ui grid">
+
+		<div class="one wide column">
+ 			&nbsp;
+ 		</div>
+ 		
+		<div class="three wide column">
+ 			New Card
+ 			{{>newCard}}
+ 		</div>
+
+ 		<div class="one wide column">
+ 			&nbsp;
+ 		</div>
+
+ 		<div class="five wide column">
+ 			TO DO
+
+ 			<div class="ui cards">
+
+ 				{{#each toDoCards}}
+ 					{{>card}}
+ 				{{/each}}
+
+ 			</div>
+
+ 		</div>
+
+ 		<div class="one wide column">
+ 			&nbsp;
+ 		</div>
+
+ 		<div class="five wide column">
+ 			DONE
+
+ 			<div class="ui cards">
+ 				{{#each doneCards}}
+ 					{{>card}}
+ 				{{/each}}
+ 			</div>
+
+ 		</div>
+
+ 		<div class="one wide column">
+ 			&nbsp;
+ 		</div>
+
+	</div>
+
+</template>
